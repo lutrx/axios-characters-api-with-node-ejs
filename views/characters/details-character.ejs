@@ -3,3 +3,9 @@
 <h3>Occupation: <%= character.occupation %></h3>
 
 <p>Weapon: <%= character.weapon %></p>
+
+<a href="<%= `/characters/${character.id}/update`%>">Edit</a>
+
+<form method="POST" action="/characters/<%= character.id %>/delete">
+    <button type="submit">Delete</button>
+</form>
